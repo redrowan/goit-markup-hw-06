@@ -407,6 +407,19 @@
             </li>
           </ul>
         </div>
+        <div class="container-subscribe">
+          <p class="subscribe-paragraph">Subscribe</p>
+          <form class="subscribe-form">
+            <div class="form-button-subscribe">
+            <label><span class="play"><input type="email" name="user-email" class="email-input colortext"/>
+              <span class="text-inside-input">E-mail</span></span>
+              </label>
+            <button type="submit" class="subscribe-button">Subscribe
+              <span class="subscribe-button-svg"><svg width="24px" height="24px"><use href="./images/sprite.svg#icon-send"></use></svg>
+              </span></button>
+          </form>
+          </div>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -423,7 +436,7 @@
         <form name="contact-form" class="contact-form">
           <label class="form-field">
             <span class="input-name">Name</span>
-            <div class="icon-wrapper-modal">
+            <span class="icon-wrapper-modal">
               <input
                 type="text"
                 name="user-name"
@@ -433,25 +446,25 @@
               <svg class="modal-icon" width="18px" height="24px">
                 <use href="./images/sprite.svg#icon-person"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="form-field">
             <span class="input-name">Phone</span>
-            <div class="icon-wrapper-modal">
+            <span class="icon-wrapper-modal">
               <input type="tel" name="user-phone" class="form-input" />
               <svg class="modal-icon" width="18px" height="24px">
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="form-field">
             <span class="input-name">Email</span>
-            <div class="icon-wrapper-modal">
+            <span class="icon-wrapper-modal">
               <input type="email" name="user-email" class="form-input" />
               <svg class="modal-icon" width="18px" height="24px">
                 <use href="./images/sprite.svg#icon-email"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="textarea-margin">
             <span class="input-name">Comment</span>
@@ -461,12 +474,14 @@
               class="user-message"
             ></textarea>
           </label>
-          <label class="checkbox-margin">
+          <input id="user-policy" type="checkbox" class="user-policy-checkbox visually-hidden">
+          <label for="user-policy" class="user-policy">I accept the terms and conditions of the&nbsp;<a href="">Privacy Policy</a></label>
+          <!--<label class="checkbox-margin">
             <input type="checkbox" name="user-policy" />
             <span class="text-policy"
               >I accept the terms and conditions of the
               <a href="">Privacy Policy</a></span
-            >
+            >-->
           </label>
           <button type="submit" class="modal-button">Send</button>
         </form>
